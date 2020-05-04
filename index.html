@@ -76,6 +76,11 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#discussion">
+                  Discussion
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#info">
                   More Info
                 </a>
@@ -112,6 +117,11 @@
             </a>
           </li>
           <li>
+            <a class="page-scroll" href="#discussion">
+              Discussion
+            </a>
+          </li>
+          <li>
             <a class="page-scroll" href="#info">
               More Info
             </a>
@@ -145,7 +155,7 @@
       <div class="container">
         <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Main Idea</h2>
-          <p> Our main idea is to analyze the new Coronavirus and the H1N1, Ebola and SARS 2003 pandemics. We want to perform exploratory analysis on these three pandemics in order to identify common patterns with Coronavirus. We also want to analyze the pandemic in different countries with reference to their population, health facilities, and finally we use machine learning and try to forecast its spread.</p>
+          <p> Our main idea is to analyze the new Coronavirus and the H1N1, Ebola and SARS 2003 pandemics. We want to perform exploratory analysis on these three pandemics in order to identify common patterns with Coronavirus. In order to do so, we will find the distribution of cases and deaths for these pandemics, see which top 10 countries were mostly affected and how(cases and deaths over pandemic duration) and finally their geographical spread. From this procedure we will understand if there are patterns between Coronavirus and the other diseases. Moreover, we also want to analyze Coronavirus in different countries with reference to their population, health facilities, and finally we use machine learning and try to forecast its spread regarding the number of cases and deaths.</p>
         </div>
       </section> 
     <!-- Main Idea Section End -->
@@ -155,7 +165,7 @@
       <div class="container">
         <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Interest</h2>
-          <p></p>
+          <p>Our interest has come from the wide spread of Coronavirus globally and how it has affected our everyday life. Among the pandemics of the 21st century, that's the one which has changed our way of living comparing to the others. So, we think that finding any common point with the other pandemics might help us figure out how to confront it and return to the way we lived.</p>
         </div>
       </section> 
     <!-- Interest Section End -->
@@ -165,24 +175,27 @@
       <div class="container">
         <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Pandemics Analysis</h2>
-          <p>The first of our analysis is to perform exploratory analysis for all the pandemics in order to understand them better. This analysis will gives us the opportunity to identify probable patterns between them and the new Coronavirus, leading us to a better understanding of the new pandemic. So the first step is to find the cases and deaths distribution for each pandemic. The results can be seen in the following figure. </p>
+          <p>The first part of our analysis is to perform exploratory analysis for all the pandemics in order to understand them better. This analysis will gives us the opportunity to identify probable patterns between them and the new Coronavirus, leading us to a better understanding of the new pandemic. So the first step is to find the cases and deaths distribution for each pandemic. The results can be seen in the following figure. </p>
             <img src="datadistribution.jpg" alt="Data distribution" style = "width: 90%; margin-top: 3%; margin-bottom: 3%"/>
-          <p> At first, we can see that from the data distribution for cases and deaths, Coronavirus doesn't look like any other pandemic. However, we continue our exploratory analysis and perform time series analysis for cases and deaths for every pandemic. The figures below show how the pandemics evolved. </p>
-          <p>Regarding the figures that follow, we would like to let you know that they are interactive. By clicking on the options inside the legend you can either remove or add them to the plot. This way, you can perform whichever comparison you want.</p>
+          <p> At first, we can see that from the data distribution for cases and deaths, Coronavirus doesn't look like any other pandemic. </p>
+          <p>In the next part, we perform time series analysis for cases and deaths for every pandemic. The figures below show how the pandemics evolved. Regarding the figures that follow, we would like to let you know that they are interactive. By clicking on the options inside the legend you can either remove or add them to the plot. This way, you can perform whichever comparison you want.</p>
           <iframe src="h1n1_cases_deaths.html" style="height: 550px; width: 100%;  margin-top: 3%; margin-bottom: 3%"></iframe>
           <iframe src="ebola_cases_deaths.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
           <iframe src="sars_cases_deaths.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
           <iframe src="corona_cases_deaths.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
-          <p>We also continued our analysis with plotting the cases and deaths in the top 10 countries affected from each disease. What we want to achive is finding patterns among the countries in any case so we can get a better understanding of the current situation. Initially in the figures below we see the time analysis for the cases. </p>
+          <p>Regarding the number of cases, we see that Ebola and SARS showed an increasing tendacy until they stabilized. However, in H1N1 we see a sudden fall in the number of cases and then again a rise until they reached the maximum level, which is higher than the one before the decrease. To a certain point we can see this pattern in the Coronavirus, when in the 29th of April there was a small decrease in the number of cases. Moving to the number of deaths, in Ebola we see a very differnt pattern of deaths with sudden increases and decreases throught its duration, while in the other pandemics, which can be considered in the category of severe flu, the deaths seem to follow the same pattern, continuous increase until they stabilize and stop. In H1N1 and SARS the number of deaths is very small comparing to COVID-19, however we can hope that it's going to stabilize like in the other two cases.</p>
+          <p>The next step is to analyze the number of cases and deaths in the top 10 contries mostly affected by each pandemic. Our purpose of this analysis is to find if there are countries affected by all of these diseases and how it evolved. In the figures below we see the time analysis for the cases. </p>
           <iframe src="h1n1_cases_top10.html" style="width: 100%; height: 550px; margin-top: 3%; margin-bottom: 3%;"></iframe>
           <iframe src="ebola_cases_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
           <iframe src="sars_cases_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
           <iframe src="corona_cases_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
-          <p>Finally, we study the death time analysis for the same countries for each pandemic. The results are shown in the figure below.</p>
+          <p>As we can see, the countries change in a great point. As we can see, Ebola affected in a great extend African countries, while it didn't have a significant impact in European countries. United States of America have been affected from all the pandemics, however we see that in H1N1 and Coronavirus have the first place with the highest number of cases. Also, before the end of the other three pandemics the situation stabilized regarding the number of cases. Comparing to Coronavirus, we see a sudden fall on Canada, while in the other countries, except USA, a relative steady ar little incresing number of cases. In the United States of America there is still a continuous increase.</p>
+          <p>Finally, we studied the deaths over time for the same countries for each pandemic. The results are shown in the figures below.</p>
           <iframe src="h1n1_deaths_top10.html" style="width: 100%; height: 550px; margin-top: 3%; margin-bottom: 3%;"></iframe>
           <iframe src="ebola_deaths_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
           <iframe src="sars_deaths_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
           <iframe src="corona_deaths_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
+          <p> As it was seen in the figure showing the total time analysis for deaths in Ebola, the same pattern can be seen here for most of the countries, which is by far different in the other pandemics. Regarding H1N1, sudden icreases, decreases and also period with no new deaths can be seen, a situation also being different from the other two diseseas. SARS and Coronavirus are the same category of viruses and this can be seen in the way deaths evolved. In SARS we can see that the number of deaths keeps increasing until it became steady. In the Coronavirus the deaths are still in the stage of increase, so someone could expect the point when they also become steady. </p>
           <p> Moreover, we plotted global maps for each pandemic, where the size of the points is corresponding to the number of cases each countries had. Also, the pins countain the number of deaths.</p>
           <p  style = "text-align: center;">H1N1 map</p>
           <iframe src="h1n1_map.html" style="width: 100%; height: 550px; margin-top: 1%; margin-bottom: 1%;"></iframe>
@@ -229,6 +242,15 @@
         </div>
       </section> 
     <!-- Machine Learning Section End -->
+
+    <!-- Discussion Section Start -->
+    <section id="discussion" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Discussion</h2>
+        </div>
+      </section> 
+    <!-- Discussion Section End -->
 
     <!-- More Info Section Start -->
     <section id="info" class="section-padding">
