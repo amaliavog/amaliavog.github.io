@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e76c672c44e0424699845bd7c7207c18 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e76c672c44e0424699845bd7c7207c18" ></div>
+        
+    
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery UI Draggable - Default functionality</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script>
+            $( function() {
+                $( "#maplegend" ).draggable({
+                                start: function (event, ui) {
+                                    $(this).css({
+                                        right: "auto",
+                                        top: "auto",
+                                        bottom: "auto"
+                                    });
+                                }
+                            });
+            });
+        </script>
+
+    </head>
+    <body>
+
+
+    <div id='maplegend' class='maplegend' 
+        style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+         border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+
+        <div class='legend-title'>Legend (draggable)</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+            <div style="font-size:70%; margin-bottom: 5px;">EBOLA Cumulative Cases</div>
+
+            <li><span style='background:red;opacity:0.7;--size:1px'></span>1 - 100</li>
+<li><span style='background:red;opacity:0.7;--size:5px'></span>> 2,000 - 4,000</li>
+<li><span style='background:red;opacity:0.7;--size:7px'></span>> 8,000 - 16,000</li>
+
+            </ul>
+        </div>
+    </div>
+
+    </body>
+    </html>
+
+    <style type='text/css'>
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 90%;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        font-size: 70%;
+        list-style: none;
+        margin-left: 0;
+        line-height: 13px;
+        margin-bottom: 1px;
+        padding-top: 1px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid grey;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: calc(var(--size) + 1px);
+        width: calc(var(--size) + 1px);
+        margin-right: 5px;
+        margin-left: calc(5px - var(--size)*0.2);
+        border-radius: 100%;
+        }
+      .maplegend .legend-source {
+        font-size: 80%;
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+</body>
+<script>    
+    
+            var map_e76c672c44e0424699845bd7c7207c18 = L.map(
+                "map_e76c672c44e0424699845bd7c7207c18",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d616a1ceccd948c78b15eba1f1ad0271 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e76c672c44e0424699845bd7c7207c18);
+        
+    
+            var circle_marker_b0a985f8c24849069155230317218457 = L.circleMarker(
+                [10.7226226, -10.7083587],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 1}
+            ).addTo(map_e76c672c44e0424699845bd7c7207c18);
+        
+    
+        var popup_dcbc5df806974a92ac5f723343bf0d76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ef6a0b2e7b044deb967dc82b0ea716b = $(`<div id="html_0ef6a0b2e7b044deb967dc82b0ea716b" style="width: 100.0%; height: 100.0%;">Deaths: 2083</div>`)[0];
+            popup_dcbc5df806974a92ac5f723343bf0d76.setContent(html_0ef6a0b2e7b044deb967dc82b0ea716b);
+        
+
+        circle_marker_b0a985f8c24849069155230317218457.bindPopup(popup_dcbc5df806974a92ac5f723343bf0d76)
+        ;
+
+        
+    
+    
+            circle_marker_b0a985f8c24849069155230317218457.bindTooltip(
+                `<div>
+                     Guinea: 3351
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_856bacef9f0145009c686b543bcacad2 = L.circleMarker(
+                [9.6000359, 7.9999721],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 1}
+            ).addTo(map_e76c672c44e0424699845bd7c7207c18);
+        
+    
+        var popup_e2351844f49145f1ba0b3b14ba5bcc4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d63883bb8ef44d4b967c6f44abe653ea = $(`<div id="html_d63883bb8ef44d4b967c6f44abe653ea" style="width: 100.0%; height: 100.0%;">Deaths: 7</div>`)[0];
+            popup_e2351844f49145f1ba0b3b14ba5bcc4e.setContent(html_d63883bb8ef44d4b967c6f44abe653ea);
+        
+
+        circle_marker_856bacef9f0145009c686b543bcacad2.bindPopup(popup_e2351844f49145f1ba0b3b14ba5bcc4e)
+        ;
+
+        
+    
+    
+            circle_marker_856bacef9f0145009c686b543bcacad2.bindTooltip(
+                `<div>
+                     Nigeria: 19
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_65c8f152239e47ebae93ff510ea7ea0d = L.circleMarker(
+                [8.6400349, -11.8400269],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5, "stroke": true, "weight": 1}
+            ).addTo(map_e76c672c44e0424699845bd7c7207c18);
+        
+    
+        var popup_76a104637bfc45378fdd30f3ccf7c032 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8c9f02e7e254219b8fb8c92877587e7 = $(`<div id="html_c8c9f02e7e254219b8fb8c92877587e7" style="width: 100.0%; height: 100.0%;">Deaths: 3589</div>`)[0];
+            popup_76a104637bfc45378fdd30f3ccf7c032.setContent(html_c8c9f02e7e254219b8fb8c92877587e7);
+        
+
+        circle_marker_65c8f152239e47ebae93ff510ea7ea0d.bindPopup(popup_76a104637bfc45378fdd30f3ccf7c032)
+        ;
+
+        
+    
+    
+            circle_marker_65c8f152239e47ebae93ff510ea7ea0d.bindTooltip(
+                `<div>
+                     Sierra Leone: 8704
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8150a93b21224313ae90d04341a7b043 = L.circleMarker(
+                [5.7499721, -9.3658524],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 1}
+            ).addTo(map_e76c672c44e0424699845bd7c7207c18);
+        
+    
+        var popup_12bcc4b8dbb1474eb22f6901bdad92a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3b2c85579af460ea40e1f805362a236 = $(`<div id="html_a3b2c85579af460ea40e1f805362a236" style="width: 100.0%; height: 100.0%;">Deaths: 3858</div>`)[0];
+            popup_12bcc4b8dbb1474eb22f6901bdad92a8.setContent(html_a3b2c85579af460ea40e1f805362a236);
+        
+
+        circle_marker_8150a93b21224313ae90d04341a7b043.bindPopup(popup_12bcc4b8dbb1474eb22f6901bdad92a8)
+        ;
+
+        
+    
+    
+            circle_marker_8150a93b21224313ae90d04341a7b043.bindTooltip(
+                `<div>
+                     Liberia: 3153
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f271c7822df64ad2bcc20156af040728 = L.circleMarker(
+                [39.7837304, -100.4458825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 1}
+            ).addTo(map_e76c672c44e0424699845bd7c7207c18);
+        
+    
+        var popup_3354128419f6411e81e710baf331a2b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb17217f4fc1433fb557e2b84243c8b4 = $(`<div id="html_bb17217f4fc1433fb557e2b84243c8b4" style="width: 100.0%; height: 100.0%;">Deaths: 1</div>`)[0];
+            popup_3354128419f6411e81e710baf331a2b6.setContent(html_bb17217f4fc1433fb557e2b84243c8b4);
+        
+
+        circle_marker_f271c7822df64ad2bcc20156af040728.bindPopup(popup_3354128419f6411e81e710baf331a2b6)
+        ;
+
+        
+    
+    
+            circle_marker_f271c7822df64ad2bcc20156af040728.bindTooltip(
+                `<div>
+                     United States of America: 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_96b252200b1c480b9aadcf70a7cd3738 = L.circleMarker(
+                [16.3700359, -2.2900239],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 1}
+            ).addTo(map_e76c672c44e0424699845bd7c7207c18);
+        
+    
+        var popup_c98d04bd36f943c788ba8e2d11595ead = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f86dfbde7598496789d8ad1a5d2df870 = $(`<div id="html_f86dfbde7598496789d8ad1a5d2df870" style="width: 100.0%; height: 100.0%;">Deaths: 3503</div>`)[0];
+            popup_c98d04bd36f943c788ba8e2d11595ead.setContent(html_f86dfbde7598496789d8ad1a5d2df870);
+        
+
+        circle_marker_96b252200b1c480b9aadcf70a7cd3738.bindPopup(popup_c98d04bd36f943c788ba8e2d11595ead)
+        ;
+
+        
+    
+    
+            circle_marker_96b252200b1c480b9aadcf70a7cd3738.bindTooltip(
+                `<div>
+                     Mali: 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

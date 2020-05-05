@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_792c5c68827145c59483aa5fc60160f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_792c5c68827145c59483aa5fc60160f3" ></div>
+        
+    
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery UI Draggable - Default functionality</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script>
+            $( function() {
+                $( "#maplegend" ).draggable({
+                                start: function (event, ui) {
+                                    $(this).css({
+                                        right: "auto",
+                                        top: "auto",
+                                        bottom: "auto"
+                                    });
+                                }
+                            });
+            });
+        </script>
+
+    </head>
+    <body>
+
+
+    <div id='maplegend' class='maplegend' 
+        style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+         border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+
+        <div class='legend-title'>Legend (draggable)</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+            <div style="font-size:70%; margin-bottom: 5px;">SARS Cumulative Deaths</div>
+
+            <li><span style='background:black;opacity:0.7;--size:1px'></span>1 - 10</li>
+<li><span style='background:black;opacity:0.7;--size:2px'></span>> 10 - 50</li>
+<li><span style='background:black;opacity:0.7;--size:3px'></span>> 50 - 100</li>
+<li><span style='background:black;opacity:0.7;--size:5px'></span>> 200 - 400</li>
+
+            </ul>
+        </div>
+    </div>
+
+    </body>
+    </html>
+
+    <style type='text/css'>
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 90%;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        font-size: 70%;
+        list-style: none;
+        margin-left: 0;
+        line-height: 13px;
+        margin-bottom: 1px;
+        padding-top: 1px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid grey;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: calc(var(--size) + 1px);
+        width: calc(var(--size) + 1px);
+        margin-right: 5px;
+        margin-left: calc(5px - var(--size)*0.2);
+        border-radius: 100%;
+        }
+      .maplegend .legend-source {
+        font-size: 80%;
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+</body>
+<script>    
+    
+            var map_792c5c68827145c59483aa5fc60160f3 = L.map(
+                "map_792c5c68827145c59483aa5fc60160f3",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_20313217bc124206ae18fe80a54eaef3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_792c5c68827145c59483aa5fc60160f3);
+        
+    
+            var circle_marker_94b3e4d6e4f1430ba985bf7eb648a3c3 = L.circleMarker(
+                [61.0666922, -107.9917071],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_792c5c68827145c59483aa5fc60160f3);
+        
+    
+        var popup_04d3466cb6114d75963d8cd3b05839dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c379430891b4edbbcda407b79d68986 = $(`<div id="html_2c379430891b4edbbcda407b79d68986" style="width: 100.0%; height: 100.0%;">Cases: 29</div>`)[0];
+            popup_04d3466cb6114d75963d8cd3b05839dd.setContent(html_2c379430891b4edbbcda407b79d68986);
+        
+
+        circle_marker_94b3e4d6e4f1430ba985bf7eb648a3c3.bindPopup(popup_04d3466cb6114d75963d8cd3b05839dd)
+        ;
+
+        
+    
+    
+            circle_marker_94b3e4d6e4f1430ba985bf7eb648a3c3.bindTooltip(
+                `<div>
+                     Canada: 38
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_079b2332a31f48dc9772a3328ee8854d = L.circleMarker(
+                [1.357107, 103.8194992],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_792c5c68827145c59483aa5fc60160f3);
+        
+    
+        var popup_0a4de38425184a13b42825e996756bad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69a7e3ae5a6c4a0e90fa438c545e3f59 = $(`<div id="html_69a7e3ae5a6c4a0e90fa438c545e3f59" style="width: 100.0%; height: 100.0%;">Cases: 21</div>`)[0];
+            popup_0a4de38425184a13b42825e996756bad.setContent(html_69a7e3ae5a6c4a0e90fa438c545e3f59);
+        
+
+        circle_marker_079b2332a31f48dc9772a3328ee8854d.bindPopup(popup_0a4de38425184a13b42825e996756bad)
+        ;
+
+        
+    
+    
+            circle_marker_079b2332a31f48dc9772a3328ee8854d.bindTooltip(
+                `<div>
+                     Singapore: 32
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b6e8c7450474a10bdcde036df3586fb = L.circleMarker(
+                [50.843871899999996, 4.374383524843479],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 1}
+            ).addTo(map_792c5c68827145c59483aa5fc60160f3);
+        
+    
+        var popup_fc77661aab1b45f68b9d7314f42621e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27f79d8d8c4f47d99e21d8c19c65ba28 = $(`<div id="html_27f79d8d8c4f47d99e21d8c19c65ba28" style="width: 100.0%; height: 100.0%;">Cases: 155</div>`)[0];
+            popup_fc77661aab1b45f68b9d7314f42621e2.setContent(html_27f79d8d8c4f47d99e21d8c19c65ba28);
+        
+
+        circle_marker_4b6e8c7450474a10bdcde036df3586fb.bindPopup(popup_fc77661aab1b45f68b9d7314f42621e2)
+        ;
+
+        
+    
+    
+            circle_marker_4b6e8c7450474a10bdcde036df3586fb.bindTooltip(
+                `<div>
+                     Hong Kong SAR, China: 298
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_954f9600a82a4ea9b3c76feb5246d7a1 = L.circleMarker(
+                [14.8971921, 100.83273],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 1}
+            ).addTo(map_792c5c68827145c59483aa5fc60160f3);
+        
+    
+        var popup_8cec53fe4376418fbbcdca56a6f426eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82f76e06638c4a9697da07bcfa44e7f7 = $(`<div id="html_82f76e06638c4a9697da07bcfa44e7f7" style="width: 100.0%; height: 100.0%;">Cases: 3</div>`)[0];
+            popup_8cec53fe4376418fbbcdca56a6f426eb.setContent(html_82f76e06638c4a9697da07bcfa44e7f7);
+        
+
+        circle_marker_954f9600a82a4ea9b3c76feb5246d7a1.bindPopup(popup_8cec53fe4376418fbbcdca56a6f426eb)
+        ;
+
+        
+    
+    
+            circle_marker_954f9600a82a4ea9b3c76feb5246d7a1.bindTooltip(
+                `<div>
+                     Thailand: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_217c64cd55ee4d99a5e3b85e0e970041 = L.circleMarker(
+                [13.2904027, 108.4265113],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 1}
+            ).addTo(map_792c5c68827145c59483aa5fc60160f3);
+        
+    
+        var popup_8dfce353bde549128721a9904a08ed30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bb5ce30075d480c839b9e049f4ef82f = $(`<div id="html_7bb5ce30075d480c839b9e049f4ef82f" style="width: 100.0%; height: 100.0%;">Cases: 17</div>`)[0];
+            popup_8dfce353bde549128721a9904a08ed30.setContent(html_7bb5ce30075d480c839b9e049f4ef82f);
+        
+
+        circle_marker_217c64cd55ee4d99a5e3b85e0e970041.bindPopup(popup_8dfce353bde549128721a9904a08ed30)
+        ;
+
+        
+    
+    
+            circle_marker_217c64cd55ee4d99a5e3b85e0e970041.bindTooltip(
+                `<div>
+                     Viet Nam: 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c73437ee71d14a588e11a3c0fade3c0d = L.circleMarker(
+                [35.000074, 104.999927],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 1}
+            ).addTo(map_792c5c68827145c59483aa5fc60160f3);
+        
+    
+        var popup_13da20a0b1534140b245f2a80fc5d72b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_394af59b9b9f44bab5320daf5f4a6d15 = $(`<div id="html_394af59b9b9f44bab5320daf5f4a6d15" style="width: 100.0%; height: 100.0%;">Cases: 1356</div>`)[0];
+            popup_13da20a0b1534140b245f2a80fc5d72b.setContent(html_394af59b9b9f44bab5320daf5f4a6d15);
+        
+
+        circle_marker_c73437ee71d14a588e11a3c0fade3c0d.bindPopup(popup_13da20a0b1534140b245f2a80fc5d72b)
+        ;
+
+        
+    
+    
+            circle_marker_c73437ee71d14a588e11a3c0fade3c0d.bindTooltip(
+                `<div>
+                     China: 348
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ebf69ff15d74c6e8f3e1f0f6b894a3c = L.circleMarker(
+                [23.9739374, 120.9820179],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 1}
+            ).addTo(map_792c5c68827145c59483aa5fc60160f3);
+        
+    
+        var popup_db49ce9537454c6da075f66b054e80d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3ad87fc44c24e4b9d3215ec560480fb = $(`<div id="html_a3ad87fc44c24e4b9d3215ec560480fb" style="width: 100.0%; height: 100.0%;">Cases: 70</div>`)[0];
+            popup_db49ce9537454c6da075f66b054e80d6.setContent(html_a3ad87fc44c24e4b9d3215ec560480fb);
+        
+
+        circle_marker_3ebf69ff15d74c6e8f3e1f0f6b894a3c.bindPopup(popup_db49ce9537454c6da075f66b054e80d6)
+        ;
+
+        
+    
+    
+            circle_marker_3ebf69ff15d74c6e8f3e1f0f6b894a3c.bindTooltip(
+                `<div>
+                     Taiwan, China: 84
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_44b87ee4b6de4d6c88a9e36dc16cdd20 = L.circleMarker(
+                [4.5693754, 102.2656823],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 1}
+            ).addTo(map_792c5c68827145c59483aa5fc60160f3);
+        
+    
+        var popup_5791f93570b341cda7bf24dcc464ddec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6ef2379d4ef4817b11c225f2cc29a3c = $(`<div id="html_c6ef2379d4ef4817b11c225f2cc29a3c" style="width: 100.0%; height: 100.0%;">Cases: 2</div>`)[0];
+            popup_5791f93570b341cda7bf24dcc464ddec.setContent(html_c6ef2379d4ef4817b11c225f2cc29a3c);
+        
+
+        circle_marker_44b87ee4b6de4d6c88a9e36dc16cdd20.bindPopup(popup_5791f93570b341cda7bf24dcc464ddec)
+        ;
+
+        
+    
+    
+            circle_marker_44b87ee4b6de4d6c88a9e36dc16cdd20.bindTooltip(
+                `<div>
+                     Malaysia: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0105b600d5ab4cc1a8f6061d47d71ebd = L.circleMarker(
+                [12.7503486, 122.7312101],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 1}
+            ).addTo(map_792c5c68827145c59483aa5fc60160f3);
+        
+    
+        var popup_a388787d89fd4d17a874b20c7b269220 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_815a42ff701348c48a43b877bb867f6c = $(`<div id="html_815a42ff701348c48a43b877bb867f6c" style="width: 100.0%; height: 100.0%;">Cases: 7</div>`)[0];
+            popup_a388787d89fd4d17a874b20c7b269220.setContent(html_815a42ff701348c48a43b877bb867f6c);
+        
+
+        circle_marker_0105b600d5ab4cc1a8f6061d47d71ebd.bindPopup(popup_a388787d89fd4d17a874b20c7b269220)
+        ;
+
+        
+    
+    
+            circle_marker_0105b600d5ab4cc1a8f6061d47d71ebd.bindTooltip(
+                `<div>
+                     Philippines: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

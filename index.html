@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Social Data Analysis</title>
+    <link rel="icon" href="assets/Coronavirus.ico", type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
@@ -179,39 +180,187 @@
             <img src="datadistribution.jpg" alt="Data distribution" style = "width: 90%; margin-top: 3%; margin-bottom: 3%"/>
           <p> At first, we can see that from the data distribution for cases and deaths, Coronavirus doesn't look like any other pandemic. </p>
           <p>In the next part, we perform time series analysis for cases and deaths for every pandemic. The figures below show how the pandemics evolved. Regarding the figures that follow, we would like to let you know that they are interactive. By clicking on the options inside the legend you can either remove or add them to the plot. This way, you can perform whichever comparison you want.</p>
-          <iframe src="h1n1_cases_deaths.html" style="height: 550px; width: 100%;  margin-top: 3%; margin-bottom: 3%"></iframe>
-          <iframe src="ebola_cases_deaths.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
-          <iframe src="sars_cases_deaths.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
-          <iframe src="corona_cases_deaths.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
+          <iframe src="h1n1_cases_deaths.html" style="width: 140%; transform: translateX(-13%); height: 550px; padding-left: -50%; margin-top: 3%; margin-bottom: 3%"></iframe>
+          <iframe src="ebola_cases_deaths.html" style="width: 140%; transform: translateX(-13%); height: 550px; margin-bottom: 3%;"></iframe>
+          <iframe src="sars_cases_deaths.html" style="width: 140%; transform: translateX(-13%); height: 550px; margin-bottom: 3%;"></iframe>
+          <iframe src="corona_cases_deaths.html" style="width: 140%; transform: translateX(-13%); height: 550px; margin-bottom: 3%;"></iframe>
           <p>Regarding the number of cases, we see that Ebola and SARS showed an increasing tendacy until they stabilized. However, in H1N1 we see a sudden fall in the number of cases and then again a rise until they reached the maximum level, which is higher than the one before the decrease. To a certain point we can see this pattern in the Coronavirus, when in the 29th of April there was a small decrease in the number of cases. Moving to the number of deaths, in Ebola we see a very differnt pattern of deaths with sudden increases and decreases throught its duration, while in the other pandemics, which can be considered in the category of severe flu, the deaths seem to follow the same pattern, continuous increase until they stabilize and stop. In H1N1 and SARS the number of deaths is very small comparing to COVID-19, however we can hope that it's going to stabilize like in the other two cases.</p>
           <p>The next step is to analyze the number of cases and deaths in the top 10 contries mostly affected by each pandemic. Our purpose of this analysis is to find if there are countries affected by all of these diseases and how it evolved. In the figures below we see the time analysis for the cases. </p>
+          <br/>
+          
+          <ul class="nav nav-tabs" id="top10CasesTabs" role="tablist" style="width: 140%; transform: translateX(-13%);">
+            <li class="nav-item">
+              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#h1n1-top10-cases" role="tab" aria-controls="home" aria-selected="true">H1N1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-profile-tab" data-toggle="tab" href="#ebola-top10-cases" role="tab" aria-controls="profile" aria-selected="false">Ebola</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#sars-top10-cases" role="tab" aria-controls="contact" aria-selected="false">SARS 2003</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-covid-tab" data-toggle="tab" href="#covid-top10-cases" role="tab" aria-controls="contact" aria-selected="false">Covid-19</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="top10CasesTabContent" style="width: 140%; transform: translateX(-13%);">
+            <div class="tab-pane fade show active" id="h1n1-top10-cases" role="tabpanel" aria-labelledby="h1n1-tab" data-src="h1n1_cases_top10.html">
+              <iframe src="h1n1_cases_top10.html" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="ebola-top10-cases" role="tabpanel" aria-labelledby="ebola-tab" data-src="ebola_cases_top10.html">
+              <iframe src="" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="sars-top10-cases" role="tabpanel" aria-labelledby="sars-tab" data-src="sars_cases_top10.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>     
+            <div class="tab-pane fade" id="covid-top10-cases" role="tabpanel" aria-labelledby="covid-tab" data-src="corona_cases_top10.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+          </div>
+          
+<!--
           <iframe src="h1n1_cases_top10.html" style="width: 100%; height: 550px; margin-top: 3%; margin-bottom: 3%;"></iframe>
           <iframe src="ebola_cases_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
           <iframe src="sars_cases_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
           <iframe src="corona_cases_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
+-->
+          <br/>
           <p>As we can see, the countries change in a great point. As we can see, Ebola affected in a great extend African countries, while it didn't have a significant impact in European countries. United States of America have been affected from all the pandemics, however we see that in H1N1 and Coronavirus have the first place with the highest number of cases. Also, before the end of the other three pandemics the situation stabilized regarding the number of cases. Comparing to Coronavirus, we see a sudden fall on Canada, while in the other countries, except USA, a relative steady ar little incresing number of cases. In the United States of America there is still a continuous increase.</p>
           <p>Finally, we studied the deaths over time for the same countries for each pandemic. The results are shown in the figures below.</p>
-          <iframe src="h1n1_deaths_top10.html" style="width: 100%; height: 550px; margin-top: 3%; margin-bottom: 3%;"></iframe>
-          <iframe src="ebola_deaths_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
-          <iframe src="sars_deaths_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
-          <iframe src="corona_deaths_top10.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
+          <br />
+          
+          <ul class="nav nav-tabs" id="top10DeathsTabs" role="tablist" style="width: 140%; transform: translateX(-13%);">
+            <li class="nav-item">
+              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#h1n1-top10" role="tab" aria-controls="home" aria-selected="true">H1N1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-profile-tab" data-toggle="tab" href="#ebola-top10" role="tab" aria-controls="profile" aria-selected="false">Ebola</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#sars-top10" role="tab" aria-controls="contact" aria-selected="false">SARS 2003</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-covid-tab" data-toggle="tab" href="#covid-top10" role="tab" aria-controls="contact" aria-selected="false">Covid-19</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="top10DeathsTabContent" style="width: 140%; transform: translateX(-13%);">
+            <div class="tab-pane fade show active" id="h1n1-top10" role="tabpanel" aria-labelledby="h1n1-tab" data-src="h1n1_deaths_top10.html">
+              <iframe src="h1n1_deaths_top10.html" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="ebola-top10" role="tabpanel" aria-labelledby="ebola-tab" data-src="ebola_deaths_top10.html">
+              <iframe src="" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="sars-top10" role="tabpanel" aria-labelledby="sars-tab" data-src="sars_deaths_top10.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>     
+            <div class="tab-pane fade" id="covid-top10" role="tabpanel" aria-labelledby="covid-tab" data-src="corona_deaths_top10.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+          </div>
+          
+          <br/>
           <p> As it was seen in the figure showing the total time analysis for deaths in Ebola, the same pattern can be seen here for most of the countries, which is by far different in the other pandemics. Regarding H1N1, sudden icreases, decreases and also period with no new deaths can be seen, a situation also being different from the other two diseseas. SARS and Coronavirus are the same category of viruses and this can be seen in the way deaths evolved. In SARS we can see that the number of deaths keeps increasing until it became steady. In the Coronavirus the deaths are still in the stage of increase, so someone could expect the point when they also become steady. </p>
-          <p> Moreover, we plotted global maps for each pandemic, where the size of the points is corresponding to the number of cases each countries had. Also, the pins countain the number of deaths.</p>
-          <p  style = "text-align: center;">H1N1 map</p>
-          <iframe src="h1n1_map.html" style="width: 100%; height: 550px; margin-top: 1%; margin-bottom: 1%;"></iframe>
-          <p  style = "text-align: center;">Ebola map</p>
-          <iframe src="ebola_map.html" style="width: 100%; height: 550px; margin-top: 1%; margin-bottom: 1%;"></iframe>
-          <p  style = "text-align: center;">SARS 2003 map</p>
-          <iframe src="sars_map.html" style="width: 100%; height: 550px; margin-top: 1%; margin-bottom: 1%;"></iframe>
-          <p  style = "text-align: center;">Coronavorus-19 map</p>
-          <iframe src="corona_map.html" style="width: 100%; height: 550px; margin-top: 1%; margin-bottom: 1%;"></iframe>
+          <p> Moreover, we plotted global maps for each pandemic, where the size of the points is corresponding to the <i>number of deaths</i> each countries had. Also, by clicking the pins the accumulated <i>number of cases</i> is shown.</p>
+          <br/>
+            
+          <ul class="nav nav-tabs" id="worldMapTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="map-h1n1-tab" data-toggle="tab" href="#h1n1-map" role="tab" aria-controls="home" aria-selected="true">H1N1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-ebola-tab" data-toggle="tab" href="#ebola-map" role="tab" aria-controls="profile" aria-selected="false">Ebola</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-sars-tab" data-toggle="tab" href="#sars-map" role="tab" aria-controls="contact" aria-selected="false">SARS 2003</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-covid-tab" data-toggle="tab" href="#covid-map" role="tab" aria-controls="contact" aria-selected="false">Covid-19</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="worldMapTabContent">
+            <div class="tab-pane fade show active" id="h1n1-map" role="tabpanel" aria-labelledby="h1n1-tab" data-src="web/h1n1_deaths_map.html">
+              <iframe src="web/h1n1_deaths_map.html" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="ebola-map" role="tabpanel" aria-labelledby="ebola-tab" data-src="web/ebola_deaths_map.html">
+              <iframe src="" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="sars-map" role="tabpanel" aria-labelledby="sars-tab" data-src="web/sars_deaths_map.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>     
+            <div class="tab-pane fade" id="covid-map" role="tabpanel" aria-labelledby="covid-tab" data-src="web/covid19_deaths_map.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+          </div>
+
+          <br/>
           <p> Finally, to finish the first part of our analysis we plotted time maps so as to show how each pandemic spread throughout its duration.</p>
-          <p  style = "text-align: center;">H1N1 map over time</p>
-          <iframe src="h1n1_time_map.html" style="width: 100%; height: 550px; margin-top: 1%; margin-bottom: 1%;"></iframe>
-          <p  style = "text-align: center;">Ebola map over time</p>
-          <iframe src="ebola_time_map.html" style="width: 100%; height: 550px; margin-top: 1%; margin-bottom: 1%;"></iframe>
-          <p  style = "text-align: center;">SARS 2003 map over time</p>
-          <iframe src="sars_time_map.html" style="width: 100%; height: 550px; margin-top: 1%; margin-bottom: 1%;"></iframe>
+          <p> Take a look at how the <i>number of cases</i> spreads below.</p>
+
+          <br/>
+          
+          <ul class="nav nav-tabs" id="worldMapTimeTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#h1n1-map-time" role="tab" aria-controls="home" aria-selected="true">H1N1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-profile-tab" data-toggle="tab" href="#ebola-map-time" role="tab" aria-controls="profile" aria-selected="false">Ebola</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#sars-map-time" role="tab" aria-controls="contact" aria-selected="false">SARS 2003</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-sars-tab" data-toggle="tab" href="#covid-map-time" role="tab" aria-controls="contact" aria-selected="false">Covid-19</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="worldMapTimeTabContent">
+            <div class="tab-pane fade show active" id="h1n1-map-time" role="tabpanel" aria-labelledby="home-tab" data-src="web/h1n1_cases_time_map.html">
+              <iframe src="web/h1n1_cases_time_map.html" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="ebola-map-time" role="tabpanel" aria-labelledby="profile-tab" data-src="web/ebola_cases_time_map.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="sars-map-time" role="tabpanel" aria-labelledby="contact-tab" data-src="web/sars_cases_time_map.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="covid-map-time" role="tabpanel" aria-labelledby="contact-tab" data-src="web/covid19_cases_time_map.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+          </div>
+          
+          <br/>
+          <p> The case count is less reliable since there are many different testing approaches across the world and thus a lot of unknowns not being shown.
+            More reliable and comparable is the death count; take a look at how the <i>number of deaths</i> spreads below.
+          </p>
+          <br/>
+          
+          <ul class="nav nav-tabs" id="worldMapTimeDeathsTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#h1n1-map-time-deaths" role="tab" aria-controls="home" aria-selected="true">H1N1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-profile-tab" data-toggle="tab" href="#ebola-map-time-deaths" role="tab" aria-controls="profile" aria-selected="false">Ebola</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#sars-map-time-deaths" role="tab" aria-controls="contact" aria-selected="false">SARS 2003</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-sars-tab" data-toggle="tab" href="#covid-map-time-deaths" role="tab" aria-controls="contact" aria-selected="false">Covid-19</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="worldMapTimeDeathsTabContent">
+            <div class="tab-pane fade show active" id="h1n1-map-time-deaths" role="tabpanel" aria-labelledby="home-tab" data-src="web/h1n1_deaths_time_map.html">
+              <iframe src="web/h1n1_deaths_time_map.html" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="ebola-map-time-deaths" role="tabpanel" aria-labelledby="profile-tab" data-src="web/ebola_deaths_time_map.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="sars-map-time-deaths" role="tabpanel" aria-labelledby="contact-tab" data-src="web/sars_deaths_time_map.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="covid-map-time-deaths" role="tabpanel" aria-labelledby="contact-tab" data-src="web/covid19_deaths_time_map.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+          </div>
+          
         </div>
       </section> 
     <!-- Pandemics Analysis Section End -->
@@ -221,15 +370,52 @@
       <div class="container">
         <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Coronavirus Analysis</h2>
-          <p>Moving on with our analysis for the Coronavirus, we performed time analysis among the top 20 countries affected from this new pandemic. The folloing figures show the time analyssi for cases and deaths</p>
-          <iframe src="corona_cases_top20.html" style="width: 100%; height: 650px; margin-top: 3%; margin-bottom: 3%;"></iframe>
-          <iframe src="corona_deaths_top20.html" style="width: 100%; height: 650px; margin-bottom: 3%;"></iframe>
-          <p> We also did the same analysis among the nordic countries, Denmark, Sweden, Norway, Finland and Iceland, so we can compare how the pandemic evolved in those countries.</p>
-          <iframe src="corona_cases_nordic.html" style="width: 100%; height: 550px; margin-top: 3%; margin-bottom: 3%;"></iframe>
-          <iframe src="corona_deaths_nordic.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
-          <p>And finally, we wanted to compare the cases and deaths in Denmark, Turkey and Greece.</p>
-          <iframe src="corona_cases_team.html" style="width: 100%; height: 550px; margin-top: 3%; margin-bottom: 3%;"></iframe>
-          <iframe src="corona_deaths_team.html" style="width: 100%; height: 550px; margin-bottom: 3%;"></iframe>
+          <p>Moving on with our analysis for the Coronavirus, we performed time analysis among the top 20 countries affected from this new pandemic. The following figures show the time analysis for cases and deaths</p>
+          <p>We did the same analysis among the nordic countries, Denmark, Sweden, Norway, Finland and Iceland, so we can compare how the pandemic evolved in those countries.</p>
+          <p>Finally, we wanted to compare the cases and deaths in our home countries Denmark, Turkey and Greece.</p>
+          <br/>
+          
+          <ul class="nav nav-tabs" id="top20CoronaTabs" role="tablist"  style="width: 140%; transform: translateX(-13%);">
+            <li class="nav-item">
+              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#top20-cases" role="tab" aria-controls="home" aria-selected="true">Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-profile-tab" data-toggle="tab" href="#top20-deaths" role="tab" aria-controls="profile" aria-selected="false">Deaths</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#top20-cases-nordic" role="tab" aria-controls="contact" aria-selected="false">Cases - Nordic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-sars-tab" data-toggle="tab" href="#top20-deaths-nordic" role="tab" aria-controls="contact" aria-selected="false">Deaths - Nordic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#top20-cases-team" role="tab" aria-controls="contact" aria-selected="false">Cases - Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-sars-tab" data-toggle="tab" href="#top20-deaths-team" role="tab" aria-controls="contact" aria-selected="false">Deaths - Team</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="top20CoronaTabContent"  style="width: 140%; transform: translateX(-13%);">
+            <div class="tab-pane fade show active" id="top20-cases" role="tabpanel" aria-labelledby="home-tab" data-src="corona_cases_top20.html">
+              <iframe src="corona_cases_top20.html" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="top20-deaths" role="tabpanel" aria-labelledby="profile-tab" data-src="corona_deaths_top20.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="top20-cases-nordic" role="tabpanel" aria-labelledby="contact-tab" data-src="corona_cases_nordic.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="top20-deaths-nordic" role="tabpanel" aria-labelledby="contact-tab" data-src="corona_deaths_nordic.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="top20-cases-team" role="tabpanel" aria-labelledby="contact-tab" data-src="corona_cases_team.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="top20-deaths-team" role="tabpanel" aria-labelledby="contact-tab" data-src="corona_deaths_team.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+          </div>
+
         </div>
       </section> 
     <!-- Coronavirus Analysis Section End -->
@@ -249,7 +435,7 @@
         <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Discussion</h2>
         </div>
-      </section> 
+    </section> 
     <!-- Discussion Section End -->
 
     <!-- More Info Section Start -->
@@ -259,7 +445,7 @@
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">More Info</h2>
           <p  style = "text-align: center;">If you want more information about the technical aspects of our project, you can see our explainer notebook.</p>
         </div>
-      </section> 
+    </section> 
     <!-- More Info Section End -->
 
     <section id="copyright">
@@ -299,6 +485,88 @@
     <script src="assets/js/contact-form-script.min.js"></script>
     <script src="assets/js/map.js"></script>
     <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
-      
+    <script>
+      $('#top10CasesTabs a').click(function (e) { 
+        e.preventDefault()
+        target = $(e.target)
+        paneID = $(e.target).attr('href');
+        src = $(paneID).attr('data-src');
+        // if the iframe hasn't already been loaded once
+        if($(paneID+" iframe").attr("src") == "")
+        {
+            $(paneID+" iframe").attr("src", src);
+        }
+        $(this).tab('show')
+      })
+    </script> 
+    <script>
+      $('#top10DeathsTabs a').click(function (e) { 
+        e.preventDefault()
+        target = $(e.target)
+        paneID = $(e.target).attr('href');
+        src = $(paneID).attr('data-src');
+        // if the iframe hasn't already been loaded once
+        if($(paneID+" iframe").attr("src") == "")
+        {
+            $(paneID+" iframe").attr("src", src);
+        }
+        $(this).tab('show')
+      })
+    </script> 
+    <script>
+      $('#worldMapTabs a').click(function (e) { 
+        e.preventDefault()
+        paneID = $(e.target).attr('href');
+        src = $(paneID).attr('data-src');
+        // if the iframe hasn't already been loaded once
+        if($(paneID+" iframe").attr("src") == "")
+        {
+          $(paneID+" iframe").attr("src", src);
+        }
+        $(this).tab('show')
+      })
+    </script>
+    <script>
+      $('#worldMapTimeTabs a').click(function (e) { 
+        e.preventDefault()
+        target = $(e.target)
+        paneID = $(e.target).attr('href');
+        src = $(paneID).attr('data-src');
+        // if the iframe hasn't already been loaded once
+        if($(paneID+" iframe").attr("src") == "")
+        {
+            $(paneID+" iframe").attr("src", src);
+        }
+        $(this).tab('show')
+      })
+    </script>
+    <script>
+      $('#worldMapTimeDeathsTabs a').click(function (e) { 
+        e.preventDefault()
+        target = $(e.target)
+        paneID = $(e.target).attr('href');
+        src = $(paneID).attr('data-src');
+        // if the iframe hasn't already been loaded once
+        if($(paneID+" iframe").attr("src") == "")
+        {
+            $(paneID+" iframe").attr("src", src);
+        }
+        $(this).tab('show')
+      })
+    </script>
+    <script>
+      $('#top20CoronaTabs a').click(function (e) { 
+        e.preventDefault()
+        target = $(e.target)
+        paneID = $(e.target).attr('href');
+        src = $(paneID).attr('data-src');
+        // if the iframe hasn't already been loaded once
+        if($(paneID+" iframe").attr("src") == "")
+        {
+            $(paneID+" iframe").attr("src", src);
+        }
+        $(this).tab('show')
+      })
+    </script>   
   </body>
 </html>

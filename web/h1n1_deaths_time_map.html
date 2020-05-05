@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a19fa4edf1248359be56498ad431ce8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://rawcdn.githack.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
+    <script src="https://rawcdn.githack.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5a19fa4edf1248359be56498ad431ce8" ></div>
+        
+    
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery UI Draggable - Default functionality</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script>
+            $( function() {
+                $( "#maplegend" ).draggable({
+                                start: function (event, ui) {
+                                    $(this).css({
+                                        right: "auto",
+                                        top: "auto",
+                                        bottom: "auto"
+                                    });
+                                }
+                            });
+            });
+        </script>
+
+    </head>
+    <body>
+
+
+    <div id='maplegend' class='maplegend' 
+        style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+         border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+
+        <div class='legend-title'>Legend (draggable)</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+            <div style="font-size:70%; margin-bottom: 5px;">H1N1 Deaths</div>
+
+            <li><span style='background:black;opacity:0.7;--size:1px'></span>1 - 10</li>
+<li><span style='background:black;opacity:0.7;--size:2px'></span>> 10 - 50</li>
+<li><span style='background:black;opacity:0.7;--size:3px'></span>> 50 - 100</li>
+<li><span style='background:black;opacity:0.7;--size:4px'></span>> 100 - 200</li>
+
+            </ul>
+        </div>
+    </div>
+
+    </body>
+    </html>
+
+    <style type='text/css'>
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 90%;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        font-size: 70%;
+        list-style: none;
+        margin-left: 0;
+        line-height: 13px;
+        margin-bottom: 1px;
+        padding-top: 1px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid grey;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: calc(var(--size) + 1px);
+        width: calc(var(--size) + 1px);
+        margin-right: 5px;
+        margin-left: calc(5px - var(--size)*0.2);
+        border-radius: 100%;
+        }
+      .maplegend .legend-source {
+        font-size: 80%;
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+</body>
+<script>    
+    
+            var map_5a19fa4edf1248359be56498ad431ce8 = L.map(
+                "map_5a19fa4edf1248359be56498ad431ce8",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_5a19fa4edf1248359be56498ad431ce8);
+
+            
+
+        
+    
+            var tile_layer_54647262e06c4fc5b6c92d17a5938493 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5a19fa4edf1248359be56498ad431ce8);
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topleft", "title": "Expand", "titleCancel": "Exit"}
+            ).addTo(map_5a19fa4edf1248359be56498ad431ce8);
+        
+    
+            L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
+                _getDisplayDateFormat: function(date){
+                    var newdate = new moment(date);
+                    console.log(newdate)
+                    return newdate.format("YYYY/MM/DD");
+                }
+            });
+            map_5a19fa4edf1248359be56498ad431ce8.timeDimension = L.timeDimension(
+                {
+                    period: "P1D",
+                }
+            );
+            var timeDimensionControl = new L.Control.TimeDimensionCustom(
+                {"autoPlay": false, "loopButton": true, "maxSpeed": 3, "minSpeed": 1, "playerOptions": {"loop": false, "startOver": true, "transitionTime": 200}, "position": "bottomleft", "timeSliderDragUpdate": true}
+            );
+            map_5a19fa4edf1248359be56498ad431ce8.addControl(this.timeDimensionControl);
+
+            var geoJsonLayer = L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-64.9672817, -34.9964963]}, "properties": {"time": "2009-07-06", "popup": "Argentina: 60", "tooltip": "Argentina: 60", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [134.755, -24.7761086]}, "properties": {"time": "2009-07-06", "popup": "Australia: 10", "tooltip": "Australia: 10", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-07-06", "popup": "Canada: 25", "tooltip": "Canada: 25", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-07-06", "popup": "Chile: 14", "tooltip": "Chile: 14", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-73.783892, 2.8894434]}, "properties": {"time": "2009-07-06", "popup": "Colombia: 2", "tooltip": "Colombia: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-84.0739102, 10.2735633]}, "properties": {"time": "2009-07-06", "popup": "Costa Rica: 3", "tooltip": "Costa Rica: 3", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-70.3028026, 19.0974031]}, "properties": {"time": "2009-07-06", "popup": "Dominican Republic: 2", "tooltip": "Dominican Republic: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-89.8988087, 15.6356088]}, "properties": {"time": "2009-07-06", "popup": "Guatemala\u00a0: 2", "tooltip": "Guatemala\u00a0: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-07-06", "popup": "Mexico: 119", "tooltip": "Mexico: 119", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [172.8344077, -41.5000831]}, "properties": {"time": "2009-07-06", "popup": "New Zealand: 3", "tooltip": "New Zealand: 3", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [100.83273, 14.8971921]}, "properties": {"time": "2009-07-06", "popup": "Thailand: 7", "tooltip": "Thailand: 7", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-3.2765753, 54.7023545]}, "properties": {"time": "2009-07-06", "popup": "United Kingdom: 3", "tooltip": "United Kingdom: 3", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-07-06", "popup": "United States of America: 170", "tooltip": "United States of America: 170", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-56.0201525, -32.8755548]}, "properties": {"time": "2009-07-06", "popup": "Uruguay: 4", "tooltip": "Uruguay: 4", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-64.9672817, -34.9964963]}, "properties": {"time": "2009-07-03", "popup": "Argentina: 26", "tooltip": "Argentina: 26", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [134.755, -24.7761086]}, "properties": {"time": "2009-07-03", "popup": "Australia: 9", "tooltip": "Australia: 9", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-07-03", "popup": "Canada: 25", "tooltip": "Canada: 25", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-07-03", "popup": "Chile: 14", "tooltip": "Chile: 14", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-73.783892, 2.8894434]}, "properties": {"time": "2009-07-03", "popup": "Colombia: 2", "tooltip": "Colombia: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-84.0739102, 10.2735633]}, "properties": {"time": "2009-07-03", "popup": "Costa Rica*: 2", "tooltip": "Costa Rica*: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-70.3028026, 19.0974031]}, "properties": {"time": "2009-07-03", "popup": "Dominican Republic: 2", "tooltip": "Dominican Republic: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-89.8988087, 15.6356088]}, "properties": {"time": "2009-07-03", "popup": "Guatemala\u00a0: 2", "tooltip": "Guatemala\u00a0: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-07-03", "popup": "Mexico: 119", "tooltip": "Mexico: 119", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [100.83273, 14.8971921]}, "properties": {"time": "2009-07-03", "popup": "Thailand: 3", "tooltip": "Thailand: 3", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-3.2765753, 54.7023545]}, "properties": {"time": "2009-07-03", "popup": "United Kingdom: 3", "tooltip": "United Kingdom: 3", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-07-03", "popup": "United States of America: 170", "tooltip": "United States of America: 170", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-64.9672817, -34.9964963]}, "properties": {"time": "2009-07-01", "popup": "Argentina: 26", "tooltip": "Argentina: 26", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [134.755, -24.7761086]}, "properties": {"time": "2009-07-01", "popup": "Australia: 7", "tooltip": "Australia: 7", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-07-01", "popup": "Canada: 25", "tooltip": "Canada: 25", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-07-01", "popup": "Chile: 12", "tooltip": "Chile: 12", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-73.783892, 2.8894434]}, "properties": {"time": "2009-07-01", "popup": "Colombia: 2", "tooltip": "Colombia: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-84.0739102, 10.2735633]}, "properties": {"time": "2009-07-01", "popup": "Costa Rica: 2", "tooltip": "Costa Rica: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-70.3028026, 19.0974031]}, "properties": {"time": "2009-07-01", "popup": "Dominican Republic: 2", "tooltip": "Dominican Republic: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-89.8988087, 15.6356088]}, "properties": {"time": "2009-07-01", "popup": "Guatemala\u00a0: 2", "tooltip": "Guatemala\u00a0: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-07-01", "popup": "Mexico: 116", "tooltip": "Mexico: 116", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [100.83273, 14.8971921]}, "properties": {"time": "2009-07-01", "popup": "Thailand: 3", "tooltip": "Thailand: 3", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-3.2765753, 54.7023545]}, "properties": {"time": "2009-07-01", "popup": "United Kingdom: 3", "tooltip": "United Kingdom: 3", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-07-01", "popup": "United States of America: 127", "tooltip": "United States of America: 127", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-64.9672817, -34.9964963]}, "properties": {"time": "2009-06-29", "popup": "Argentina: 23", "tooltip": "Argentina: 23", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [134.755, -24.7761086]}, "properties": {"time": "2009-06-29", "popup": "Australia: 7", "tooltip": "Australia: 7", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-29", "popup": "Canada: 21", "tooltip": "Canada: 21", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-06-29", "popup": "Chile: 7", "tooltip": "Chile: 7", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-73.783892, 2.8894434]}, "properties": {"time": "2009-06-29", "popup": "Colombia: 2", "tooltip": "Colombia: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-70.3028026, 19.0974031]}, "properties": {"time": "2009-06-29", "popup": "Dominican Republic: 2", "tooltip": "Dominican Republic: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-89.8988087, 15.6356088]}, "properties": {"time": "2009-06-29", "popup": "Guatemala\u00a0: 2", "tooltip": "Guatemala\u00a0: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-29", "popup": "Mexico: 116", "tooltip": "Mexico: 116", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-29", "popup": "United States of America: 127", "tooltip": "United States of America: 127", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-64.9672817, -34.9964963]}, "properties": {"time": "2009-06-26", "popup": "Argentina: 21", "tooltip": "Argentina: 21", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [134.755, -24.7761086]}, "properties": {"time": "2009-06-26", "popup": "Australia: 3", "tooltip": "Australia: 3", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-26", "popup": "Canada: 19", "tooltip": "Canada: 19", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-06-26", "popup": "Chile: 7", "tooltip": "Chile: 7", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-73.783892, 2.8894434]}, "properties": {"time": "2009-06-26", "popup": "Colombia: 2", "tooltip": "Colombia: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-70.3028026, 19.0974031]}, "properties": {"time": "2009-06-26", "popup": "Dominican Republic: 2", "tooltip": "Dominican Republic: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-89.8988087, 15.6356088]}, "properties": {"time": "2009-06-26", "popup": "Guatemala\u00a0: 2", "tooltip": "Guatemala\u00a0: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-26", "popup": "Mexico: 116", "tooltip": "Mexico: 116", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-26", "popup": "United States of America: 87", "tooltip": "United States of America: 87", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-64.9672817, -34.9964963]}, "properties": {"time": "2009-06-24", "popup": "Argentina: 7", "tooltip": "Argentina: 7", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [134.755, -24.7761086]}, "properties": {"time": "2009-06-24", "popup": "Australia: 2", "tooltip": "Australia: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-24", "popup": "Canada: 15", "tooltip": "Canada: 15", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-06-24", "popup": "Chile: 4", "tooltip": "Chile: 4", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-73.783892, 2.8894434]}, "properties": {"time": "2009-06-24", "popup": "Colombia: 2", "tooltip": "Colombia: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-70.3028026, 19.0974031]}, "properties": {"time": "2009-06-24", "popup": "Dominican Republic: 2", "tooltip": "Dominican Republic: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-24", "popup": "Mexico: 115", "tooltip": "Mexico: 115", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-24", "popup": "United States of America: 87", "tooltip": "United States of America: 87", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-64.9672817, -34.9964963]}, "properties": {"time": "2009-06-22", "popup": "Argentina: 7", "tooltip": "Argentina: 7", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-22", "popup": "Canada: 13", "tooltip": "Canada: 13", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-06-22", "popup": "Chile: 4", "tooltip": "Chile: 4", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-73.783892, 2.8894434]}, "properties": {"time": "2009-06-22", "popup": "Colombia: 2", "tooltip": "Colombia: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-22", "popup": "Mexico: 113", "tooltip": "Mexico: 113", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-22", "popup": "United States of America: 87", "tooltip": "United States of America: 87", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-64.9672817, -34.9964963]}, "properties": {"time": "2009-06-19", "popup": "Argentina: 4", "tooltip": "Argentina: 4", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-19", "popup": "Canada: 12", "tooltip": "Canada: 12", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-06-19", "popup": "Chile: 2", "tooltip": "Chile: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-19", "popup": "Mexico: 113", "tooltip": "Mexico: 113", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-19", "popup": "United States of America: 44", "tooltip": "United States of America: 44", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-17", "popup": "Canada: 7", "tooltip": "Canada: 7", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-06-17", "popup": "Chile: 2", "tooltip": "Chile: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-17", "popup": "Mexico: 108", "tooltip": "Mexico: 108", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-17", "popup": "United States of America*: 44", "tooltip": "United States of America*: 44", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-15", "popup": "Canada: 4", "tooltip": "Canada: 4", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-06-15", "popup": "Chile: 2", "tooltip": "Chile: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-15", "popup": "Mexico: 108", "tooltip": "Mexico: 108", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-15", "popup": "United States of America: 45", "tooltip": "United States of America: 45", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-12", "popup": "Canada: 4", "tooltip": "Canada: 4", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-06-12", "popup": "Chile: 2", "tooltip": "Chile: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-12", "popup": "Mexico: 108", "tooltip": "Mexico: 108", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-12", "popup": "United States of America: 27", "tooltip": "United States of America: 27", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-11", "popup": "Canada: 4", "tooltip": "Canada: 4", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-06-11", "popup": "Chile: 2", "tooltip": "Chile: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-11", "popup": "Mexico: 108", "tooltip": "Mexico: 108", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-11", "popup": "United States of America: 27", "tooltip": "United States of America: 27", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-10", "popup": "Canada: 4", "tooltip": "Canada: 4", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]}, "properties": {"time": "2009-06-10", "popup": "Chile: 2", "tooltip": "Chile: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-10", "popup": "Mexico: 106", "tooltip": "Mexico: 106", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-10", "popup": "United States of America: 27", "tooltip": "United States of America: 27", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-08", "popup": "Canada: 3", "tooltip": "Canada: 3", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-08", "popup": "Mexico: 106", "tooltip": "Mexico: 106", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-08", "popup": "United States of America: 27", "tooltip": "United States of America: 27", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-05", "popup": "Canada: 3", "tooltip": "Canada: 3", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-05", "popup": "Mexico: 103", "tooltip": "Mexico: 103", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 2.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-05", "popup": "United States of America: 17", "tooltip": "United States of America: 17", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-03", "popup": "Canada: 2", "tooltip": "Canada: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-03", "popup": "Mexico: 97", "tooltip": "Mexico: 97", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-03", "popup": "United States of America: 17", "tooltip": "United States of America: 17", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-06-01", "popup": "Canada: 2", "tooltip": "Canada: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-06-01", "popup": "Mexico: 97", "tooltip": "Mexico: 97", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-06-01", "popup": "United States of America: 15", "tooltip": "United States of America: 15", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-107.9917071, 61.0666922]}, "properties": {"time": "2009-05-29", "popup": "Canada: 2", "tooltip": "Canada: 2", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-05-29", "popup": "Mexico: 85", "tooltip": "Mexico: 85", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-05-29", "popup": "United States of America: 11", "tooltip": "United States of America: 11", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.0, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-05-27", "popup": "Mexico: 83", "tooltip": "Mexico: 83", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-05-27", "popup": "United States of America: 10", "tooltip": "United States of America: 10", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-05-26", "popup": "Mexico: 80", "tooltip": "Mexico: 80", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-05-26", "popup": "United States of America: 10", "tooltip": "United States of America: 10", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-05-25", "popup": "Mexico: 80", "tooltip": "Mexico: 80", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-05-25", "popup": "United States of America: 9", "tooltip": "United States of America: 9", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-99.1331785, 19.4326296]}, "properties": {"time": "2009-05-23", "popup": "Mexico: 75", "tooltip": "Mexico: 75", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 1.5, "weight": 1}, "icon": "circle"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-100.4458825, 39.7837304]}, "properties": {"time": "2009-05-23", "popup": "United States of America: 9", "tooltip": "United States of America: 9", "style": {"color": "black", "fillColor": "black", "fillOpacity": 1, "radius": 0.5, "weight": 1}, "icon": "circle"}}]}, {
+                    pointToLayer: function (feature, latLng) {
+                        if (feature.properties.icon == 'marker') {
+                            if(feature.properties.iconstyle){
+                                return new L.Marker(latLng, {
+                                    icon: L.icon(feature.properties.iconstyle)});
+                            }
+                            //else
+                            return new L.Marker(latLng);
+                        }
+                        if (feature.properties.icon == 'circle') {
+                            if (feature.properties.iconstyle) {
+                                return new L.circleMarker(latLng, feature.properties.iconstyle)
+                                };
+                            //else
+                            return new L.circleMarker(latLng);
+                        }
+                        //else
+
+                        return new L.Marker(latLng);
+                    },
+                    style: function (feature) {
+                        return feature.properties.style;
+                    },
+                    onEachFeature: function(feature, layer) {
+                        if (feature.properties.popup) {
+                        layer.bindPopup(feature.properties.popup);
+                        }
+                    }
+                })
+
+            var timestamped_geo_json_9109de4445c34dd69deeae33f54faa2f = L.timeDimension.layer.geoJson(
+                geoJsonLayer,
+                {
+                    updateTimeDimension: true,
+                    addlastPoint: true,
+                    duration: undefined,
+                }
+            ).addTo(map_5a19fa4edf1248359be56498ad431ce8);
+        
+</script>
