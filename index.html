@@ -379,46 +379,102 @@
           <p>Finally, we wanted to compare the cases and deaths in our home countries Denmark, Turkey and Greece.</p>
           <br/>
           
-          <ul class="nav nav-tabs" id="top20CoronaTabs" role="tablist"  style="width: 140%; transform: translateX(-13%);">
+          <p>Moving on with our analysis for the Coronavirus, we performed time analysis among the top 20 countries affected from this new pandemic. The following figures show the time analysis for <i>deaths</i></p>
+          <p>We did the same analysis among the nordic countries, Denmark, Sweden, Norway, Finland and Iceland, so we can compare how the pandemic evolved in those countries.</p>
+          <p>Finally, we wanted to compare the cases and deaths in our home countries Denmark, Turkey and Greece.</p>
+          <br/>
+          
+          <ul class="nav nav-tabs" id="top20CoronaDeathsTabs" role="tablist"  style="width: 140%; transform: translateX(-13%);">
             <li class="nav-item">
-              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#top20-cases" role="tab" aria-controls="home" aria-selected="true">Cases</a>
+              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#top20-deaths" role="tab" aria-controls="home" aria-selected="true">Top20</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="map-profile-tab" data-toggle="tab" href="#top20-deaths" role="tab" aria-controls="profile" aria-selected="false">Deaths</a>
+              <a class="nav-link" id="map-sars-tab" data-toggle="tab" href="#top20-deaths-nordic" role="tab" aria-controls="contact" aria-selected="false">Nordic</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#top20-cases-nordic" role="tab" aria-controls="contact" aria-selected="false">Cases - Nordic</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="map-sars-tab" data-toggle="tab" href="#top20-deaths-nordic" role="tab" aria-controls="contact" aria-selected="false">Deaths - Nordic</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#top20-cases-team" role="tab" aria-controls="contact" aria-selected="false">Cases - Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="map-sars-tab" data-toggle="tab" href="#top20-deaths-team" role="tab" aria-controls="contact" aria-selected="false">Deaths - Team</a>
+              <a class="nav-link" id="map-sars-tab" data-toggle="tab" href="#top20-deaths-team" role="tab" aria-controls="contact" aria-selected="false">Team</a>
             </li>
           </ul>
-          <div class="tab-content" id="top20CoronaTabContent"  style="width: 140%; transform: translateX(-13%);">
+          <div class="tab-content" id="top20CoronaDeathsTabContent"  style="width: 140%; transform: translateX(-13%);">
+            <div class="tab-pane fade show active" id="top20-deaths" role="tabpanel" aria-labelledby="profile-tab" data-src="corona_deaths_top20.html">
+              <iframe src="corona_deaths_top20.html" loading="lazy" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="top20-deaths-nordic" role="tabpanel" aria-labelledby="contact-tab" data-src="corona_deaths_nordic.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+            <div class="tab-pane fade" id="top20-deaths-team" role="tabpanel" aria-labelledby="contact-tab" data-src="corona_deaths_team.html">
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+            </div>
+          </div>
+          
+          <br/>
+          <p>If you're interested in comparing the top 20 for <i>cases</i>, take a look at the graphs below. Bear in mind that cases contain a larger margin of unknowns.</p>
+          <br/>
+          
+          <ul class="nav nav-tabs" id="top20CoronaCasesTabs" role="tablist"  style="width: 140%; transform: translateX(-13%);">
+            <li class="nav-item">
+              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#top20-cases" role="tab" aria-controls="home" aria-selected="true">Top20</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#top20-cases-nordic" role="tab" aria-controls="contact" aria-selected="false">Nordic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#top20-cases-team" role="tab" aria-controls="contact" aria-selected="false">Team</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="top20CoronaCasesTabContent"  style="width: 140%; transform: translateX(-13%);">
             <div class="tab-pane fade show active" id="top20-cases" role="tabpanel" aria-labelledby="home-tab" data-src="corona_cases_top20.html">
               <iframe src="corona_cases_top20.html" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
             </div>
-            <div class="tab-pane fade" id="top20-deaths" role="tabpanel" aria-labelledby="profile-tab" data-src="corona_deaths_top20.html">
-              <iframe src="" loading="lazy" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
-            </div>
             <div class="tab-pane fade" id="top20-cases-nordic" role="tabpanel" aria-labelledby="contact-tab" data-src="corona_cases_nordic.html">
-              <iframe src="" loading="lazy" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
-            </div>
-            <div class="tab-pane fade" id="top20-deaths-nordic" role="tabpanel" aria-labelledby="contact-tab" data-src="corona_deaths_nordic.html">
-              <iframe src="" loading="lazy" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
             </div>
             <div class="tab-pane fade" id="top20-cases-team" role="tabpanel" aria-labelledby="contact-tab" data-src="corona_cases_team.html">
-              <iframe src="" loading="lazy" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
-            </div>
-            <div class="tab-pane fade" id="top20-deaths-team" role="tabpanel" aria-labelledby="contact-tab" data-src="corona_deaths_team.html">
-              <iframe src="" loading="lazy" style="width: 100%; height: 650px; border: 1px solid #E6E2DE; border-top: none"></iframe>
+              <iframe src="" loading="lazy" style="width: 100%; height: 550px; border: 1px solid #E6E2DE; border-top: none"></iframe>
             </div>
           </div>
+          
+          <br/>
+          <h3 class="section-title wow fadeInDown" data-wow-delay="0.3s">Reproduction Rate</h3>
+          <p>To dive deeper into the coronavirus and how it has spread in selected countries, we decided to calculate and plot the temporal evolution of reproduction rate.</p>
+          <p>The reproduction rate is calculated as a smoothed moving average over a period of four days. These numbers indicate how well countries are handling the spread of the virus in terms of countermeasures, i.e. enforcing social distancing, home quarantines, locking down parts of society.</p>
+          <br/>
+          <p>A reproduction rate of 0.0 means no new infections, whereas a reproduction rate of 1.0 means that every sick person infects 1 other person.</p>
+          <br/>
+          
+          <ul class="nav nav-tabs" id="top20CoronaReproductionRateTabs" role="tablist"  style="width: 140%; transform: translateX(-13%);">
+            <li class="nav-item">
+              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#top20-reproduction-rate-1" role="tab" aria-controls="home" aria-selected="true">Top20 - 1st half</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-home-tab" data-toggle="tab" href="#top20-reproduction-rate-2" role="tab" aria-controls="home" aria-selected="true">Top20 - 2nd half</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#top20-reproduction-rate-nordic" role="tab" aria-controls="contact" aria-selected="false">Nordic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#top20-reproduction-rate-team" role="tab" aria-controls="contact" aria-selected="false">Team</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="top20CoronaReproductionRateTabContent"  style="width: 140%; transform: translateX(-13%);">
+            <div class="tab-pane fade show active" id="top20-reproduction-rate-1" role="tabpanel" aria-labelledby="home-tab" data-src="images/covid19_top20_half1_temporal_reproduction_rate.png">
+              <img src="images/covid19_top20_half1_temporal_reproduction_rate.png" alt="top-20-half1-reproduction-rate" style="width: 100%; border: 1px solid #E6E2DE; border-top: none">
+            </div>
+            <div class="tab-pane fade" id="top20-reproduction-rate-2" role="tabpanel" aria-labelledby="contact-tab" data-src="images/covid19_top20_half2_temporal_reproduction_rate.png">
+              <img src="images/covid19_top20_half2_temporal_reproduction_rate.png" alt="top-20-half2-reproduction-rate" style="width: 100%; border: 1px solid #E6E2DE; border-top: none">
+            </div>
+            <div class="tab-pane fade" id="top20-reproduction-rate-nordic" role="tabpanel" aria-labelledby="contact-tab" data-src="images/covid19_nordic_temporal_reproduction_rate.png">
+              <img src="images/covid19_nordic_temporal_reproduction_rate.png" alt="nordic-reproduction-rate" style="width: 100%; border: 1px solid #E6E2DE; border-top: none">
+            </div>
+            <div class="tab-pane fade" id="top20-reproduction-rate-team" role="tabpanel" aria-labelledby="contact-tab" data-src="images/covid19_team_temporal_reproduction_rate.png">
+              <img src="images/covid19_team_temporal_reproduction_rate.png" alt="team-reproduction-rate" style="width: 100%; border: 1px solid #E6E2DE; border-top: none">
+            </div>
+          </div>
+          
+          <br/>
+          <p>In the first graph especially Italy stands out, having a global max reproduction rate of 2.46 at 20 days after the first confirmed case. This massive peak explains why Italy's healthcare system has been under such immense pressure. Russia and France peak around the same time, at day 30 after the first confirmed case, and their temporal reproduction rate follow a similar evolution from approximately day 25. Similarly, India peaks around day 30 but have a much more drastic increase and decrease in reproduction rate. This indicates a quick spread of the virus but also a quite efficient confinement strategy in order to decrease the reproduction rate</p>
+          <p>For the second half of the top20 countries Belgium, Spain and South Korea all peak in the third week of infections, but interestingly enough both South Korea and Belgium manage to enforce measures to lower the reproduction rate drastically again after the peak, whereas Spain does not have the same success. This results in the slow decrease in reproduction rate for Spain. South Korea have experience from a similar situation during the SARS pandemic and Belgium is a much smaller country, which might explain why they are more successful in their countermeasures. Another explanation could simply be that Spain did not act in time, and did not manage to enforce proper countermeasures to stop the virus from spreading.</p>
+          <p>Lastly, notice the exponentially decreasing nature that all reproduction rates follow. This is due to the infection slowing down and is shown this way due to the smoothed moving average.</p>
 
         </div>
       </section> 
@@ -447,7 +503,9 @@
       <div class="container">
         <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">More Info</h2>
-          <p  style = "text-align: center;">If you want more information about the technical aspects of our project, you can see our explainer notebook.</p>
+          <p  style = "text-align: center;">If you want more information about the technical aspects of our project, you can see our explainer notebook <a href="https://github.com/amaliavog/SocialDataFinalProject/blob/master/ExplainerNotebook.ipynb" target="_blank">here</a>.</p>
+          <p  style = "text-align: center;">Datasets can be found at the following links: <a href="https://www.kaggle.com/de5d5fe61fcaa6ad7a66/pandemic-2009-h1n1-swine-flu-influenza-a-dataset" target="_blank">H1N1</a> | <a href="https://www.kaggle.com/imdevskp/ebola-outbreak-20142016-complete-dataset" target="_blank">Ebola</a> | <a href="https://www.kaggle.com/imdevskp/sars-outbreak-2003-complete-dataset" target="_blank">SARS</a> | <a href="https://wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai/jhu-edu/timeseries" target="_blank">COVID-19</a>
+          </p>
         </div>
     </section> 
     <!-- More Info Section End -->
@@ -573,7 +631,7 @@
       })
     </script>
     <script>
-      $('#top20CoronaTabs a').click(function (e) { 
+      $('#top20CoronaCasesTabs a').click(function (e) { 
         e.preventDefault()
         target = $(e.target)
         paneID = $(e.target).attr('href');
@@ -585,6 +643,34 @@
         }
         $(this).tab('show')
       })
-    </script>   
+    </script>
+    <script>
+      $('#top20CoronaDeathsTabs a').click(function (e) { 
+        e.preventDefault()
+        target = $(e.target)
+        paneID = $(e.target).attr('href');
+        src = $(paneID).attr('data-src');
+        // if the iframe hasn't already been loaded once
+        if($(paneID+" iframe").attr("src") == "")
+        {
+            $(paneID+" iframe").attr("src", src);
+        }
+        $(this).tab('show')
+      })
+    </script>
+    <script>
+      $('#top20CoronaReproductionRateTabs a').click(function (e) { 
+        e.preventDefault()
+        target = $(e.target)
+        paneID = $(e.target).attr('href');
+        src = $(paneID).attr('data-src');
+        // if the iframe hasn't already been loaded once
+        if($(paneID+" img").attr("src") == "")
+        {
+            $(paneID+" img").attr("src", src);
+        }
+        $(this).tab('show')
+      })
+    </script>
   </body>
 </html>
