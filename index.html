@@ -435,7 +435,7 @@
           </div>
           
           <br/>
-          <h3 class="section-title wow fadeInDown" data-wow-delay="0.3s">Reproduction Rate</h3>
+          <h3 class="subsection-title wow fadeInDown" data-wow-delay="0.3s">Reproduction Rate</h3>
           <p>To dive deeper into the coronavirus and how it has spread in selected countries, we decided to calculate and plot the temporal evolution of reproduction rate.</p>
           <p>The reproduction rate is calculated as a smoothed moving average over a period of four days. These numbers indicate how well countries are handling the spread of the virus in terms of countermeasures, i.e. enforcing social distancing, home quarantines, locking down parts of society.</p>
           <br/>
@@ -475,39 +475,49 @@
           <p>In the first graph especially Italy stands out, having a global max reproduction rate of 2.46 at 20 days after the first confirmed case. This massive peak explains why Italy's healthcare system has been under such immense pressure. Russia and France peak around the same time, at day 30 after the first confirmed case, and their temporal reproduction rate follow a similar evolution from approximately day 25. Similarly, India peaks around day 30 but have a much more drastic increase and decrease in reproduction rate. This indicates a quick spread of the virus but also a quite efficient confinement strategy in order to decrease the reproduction rate</p>
           <p>For the second half of the top20 countries Belgium, Spain and South Korea all peak in the third week of infections, but interestingly enough both South Korea and Belgium manage to enforce measures to lower the reproduction rate drastically again after the peak, whereas Spain does not have the same success. This results in the slow decrease in reproduction rate for Spain. South Korea have experience from a similar situation during the SARS pandemic and Belgium is a much smaller country, which might explain why they are more successful in their countermeasures. Another explanation could simply be that Spain did not act in time, and did not manage to enforce proper countermeasures to stop the virus from spreading.</p>
           <p>Lastly, notice the exponentially decreasing nature that all reproduction rates follow. This is due to the infection slowing down and is shown this way due to the smoothed moving average.</p>
-          <p>Moreover, we have created a heatmap showing the correlations between economic related factors and COVID-19 related statistical measures. It is very easy to see that there is higher correlation among each group. As an example for economic related factors, Number of Doctors per ten thousand people and life expectancy are highly correlated. As an example for COVID-19 related statistical measures, deaths per ten thousand of people is highly correlated with confirmed cases per ten thousand of people. But we couldn't observe any correlation between mortality rate and economic factors.</p>
+          
+          <br/>
+          <h3 class="subsection-title wow fadeInDown" data-wow-delay="0.3s">Healthcare expenditure correlation</h3>
+          <p>Moreover, we have created a heat map showing the correlations between economic related factors and COVID-19 related statistical measures. It is very easy to see that there is higher correlation among each group. As an example for economic related factors, Number of Doctors per ten thousand people and life expectancy are highly correlated. As an example for COVID-19 related statistical measures, deaths per ten thousand of people is highly correlated with confirmed cases per ten thousand of people. But we couldn't observe any correlation between mortality rate and economic factors.</p>
+          
+          <br/>
           <p><img src="confusion_matrix.jpg"></p>
-          <p>To conlude our analysis, the pie charts below show the percentage of total confirmed cases, active and recovered per country as well as the deaths.</p>
-
-          <ul class="nav nav-tabs" id="PieChartsTabs" role="tablist"  style="width: 140%; transform: translateX(-13%);">
+          
+          <br/>
+          <h3 class="subsection-title wow fadeInDown" data-wow-delay="0.3s">Global distributions</h3>
+          <p>To conlude our analysis, the pie charts below show the percentage of total confirmed cases, active and recovered per country as well as the deaths. This global distribution is focused on the top 20 countries used previously and helps display the state of affairs in the countries that have been and are still impacted the most.</p>
+          <br/>
+          
+          <ul class="nav nav-tabs" id="PieChartsTabs" role="tablist"  style="width: 70%;transform: translateX(20%);">
             <li class="nav-item">
-              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#total_confirmed" role="tab" aria-controls="home" aria-selected="true">Total Confirmed Cases</a>
+              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#total_confirmed" role="tab" aria-controls="home" aria-selected="true">Confirmed Cases</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="map-home-tab" data-toggle="tab" href="#total_deaths" role="tab" aria-controls="home" aria-selected="true">Total Deaths</a>
+              <a class="nav-link" id="map-home-tab" data-toggle="tab" href="#total_deaths" role="tab" aria-controls="home" aria-selected="true">Deaths</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#total_active" role="tab" aria-controls="contact" aria-selected="false">Total Active Cases</a>
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#total_active" role="tab" aria-controls="contact" aria-selected="false">Active Cases</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#total_recovered" role="tab" aria-controls="contact" aria-selected="false">Total Recovered Cases</a>
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#total_recovered" role="tab" aria-controls="contact" aria-selected="false">Recovered Cases</a>
             </li>
           </ul>
-          <div class="tab-content" id="PieChartsTabContent"  style="width: 140%; transform: translateX(-13%);">
+          <div class="tab-content" id="PieChartsTabContent"  style="width: 70%;transform: translateX(20%);">
             <div class="tab-pane fade show active" id="total_confirmed" role="tabpanel" aria-labelledby="home-tab" data-src="total_confirmed.jpg">
-              <img src="total_confirmed.jpg" alt="total-confirmed-cases" style="width: 40%; height: 40%;border: 1px solid #E6E2DE; border-top: none">
+              <img src="total_confirmed.jpg" alt="total-confirmed-cases" style="width: 100%; border: 1px solid #E6E2DE; border-top: none">
             </div>
             <div class="tab-pane fade" id="total_deaths" role="tabpanel" aria-labelledby="contact-tab" data-src="total_deaths.jpg">
-              <img src="total_deaths.jpg" alt="total_deaths" style="width: 40%; height: 40%; border: 1px solid #E6E2DE; border-top: none">
+              <img src="total_deaths.jpg" alt="total_deaths" style="width: 100%; border: 1px solid #E6E2DE; border-top: none">
             </div>
             <div class="tab-pane fade" id="total_active" role="tabpanel" aria-labelledby="contact-tab" data-src="total_active.jpg">
-              <img src="total_active.jpg" alt="total_active" style="width: 40%; height: 40%; border: 1px solid #E6E2DE; border-top: none">
+              <img src="total_active.jpg" alt="total_active" style="width: 100%; border: 1px solid #E6E2DE; border-top: none">
             </div>
             <div class="tab-pane fade" id="total_recovered" role="tabpanel" aria-labelledby="contact-tab" data-src="total_recovered.jpg">
-              <img src="total_recovered.jpg" alt="total_recovered" style="width: 40%; height: 40%; border: 1px solid #E6E2DE; border-top: none">
+              <img src="total_recovered.jpg" alt="total_recovered" style="width: 100%; border: 1px solid #E6E2DE; border-top: none">
             </div>
           </div>
-          <p>As we can see, United States of America have a big difference in the number of confirmed cases comparing to the other countries, as weel as in the number of active cases. They are also in the first place in the number of deaths while the European countried mostly affected by the pandemic, Spain, Italy, France and United Kingdom, have almost the same number.</p>
+          <br/>
+          <p>As we can see, United States of America is has about 6 times the number of confirmed cases compared to the second most country, Russia. Similarly for the number of active cases where USA has more than 5 times the second-most, United Kingdom, indicating that the situation in the US is still quite severe. The population of each country has not been accounted for in this graph, which might skew the numbers a bit, since large populations will appear worse. Another relevant factor to account for is how isolated each individual can actually be in a given country. Hence, the average area per individual might be relevant to dive into for future work. USA are also in the first place in the number of deaths while the European countries mostly affected by the pandemic, Spain, Italy, France and United Kingdom, have almost similar number of deaths at the moment this distribution was sampled.</p>
 
         </div>
       </section> 
