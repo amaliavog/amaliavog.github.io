@@ -475,6 +475,39 @@
           <p>In the first graph especially Italy stands out, having a global max reproduction rate of 2.46 at 20 days after the first confirmed case. This massive peak explains why Italy's healthcare system has been under such immense pressure. Russia and France peak around the same time, at day 30 after the first confirmed case, and their temporal reproduction rate follow a similar evolution from approximately day 25. Similarly, India peaks around day 30 but have a much more drastic increase and decrease in reproduction rate. This indicates a quick spread of the virus but also a quite efficient confinement strategy in order to decrease the reproduction rate</p>
           <p>For the second half of the top20 countries Belgium, Spain and South Korea all peak in the third week of infections, but interestingly enough both South Korea and Belgium manage to enforce measures to lower the reproduction rate drastically again after the peak, whereas Spain does not have the same success. This results in the slow decrease in reproduction rate for Spain. South Korea have experience from a similar situation during the SARS pandemic and Belgium is a much smaller country, which might explain why they are more successful in their countermeasures. Another explanation could simply be that Spain did not act in time, and did not manage to enforce proper countermeasures to stop the virus from spreading.</p>
           <p>Lastly, notice the exponentially decreasing nature that all reproduction rates follow. This is due to the infection slowing down and is shown this way due to the smoothed moving average.</p>
+          <p>Moreover, we have created a heatmap showing the correlations between economic related factors and COVID-19 related statistical measures. It is very easy to see that there is higher correlation among each group. As an example for economic related factors, Number of Doctors per ten thousand people and life expectancy are highly correlated. As an example for COVID-19 related statistical measures, deaths per ten thousand of people is highly correlated with confirmed cases per ten thousand of people. But we couldn't observe any correlation between mortality rate and economic factors.</p>
+          <p><img src="confusion_matrix.jpg"></p>
+          <p>To conlude our analysis, the pie charts below show the percentage of total confirmed cases, active and recovered per country as well as the deaths.</p>
+
+          <ul class="nav nav-tabs" id="PieChartsTabs" role="tablist"  style="width: 140%; transform: translateX(-13%);">
+            <li class="nav-item">
+              <a class="nav-link active" id="map-home-tab" data-toggle="tab" href="#total_confirmed" role="tab" aria-controls="home" aria-selected="true">Total Confirmed Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-home-tab" data-toggle="tab" href="#total_deaths" role="tab" aria-controls="home" aria-selected="true">Total Deaths</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#total_active" role="tab" aria-controls="contact" aria-selected="false">Total Active Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="map-contact-tab" data-toggle="tab" href="#total_recovered" role="tab" aria-controls="contact" aria-selected="false">Total Recovered Cases</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="PieChartsTabContent"  style="width: 140%; transform: translateX(-13%);">
+            <div class="tab-pane fade show active" id="total_confirmed" role="tabpanel" aria-labelledby="home-tab" data-src="total_confirmed.jpg">
+              <img src="total_confirmed.jpg" alt="total-confirmed-cases" style="width: 40%; height: 40%;border: 1px solid #E6E2DE; border-top: none">
+            </div>
+            <div class="tab-pane fade" id="total_deaths" role="tabpanel" aria-labelledby="contact-tab" data-src="total_deaths.jpg">
+              <img src="total_deaths.jpg" alt="total_deaths" style="width: 40%; height: 40%; border: 1px solid #E6E2DE; border-top: none">
+            </div>
+            <div class="tab-pane fade" id="total_active" role="tabpanel" aria-labelledby="contact-tab" data-src="total_active.jpg">
+              <img src="total_active.jpg" alt="total_active" style="width: 40%; height: 40%; border: 1px solid #E6E2DE; border-top: none">
+            </div>
+            <div class="tab-pane fade" id="total_recovered" role="tabpanel" aria-labelledby="contact-tab" data-src="total_recovered.jpg">
+              <img src="total_recovered.jpg" alt="total_recovered" style="width: 40%; height: 40%; border: 1px solid #E6E2DE; border-top: none">
+            </div>
+          </div>
+          <p>As we can see, United States of America have a big difference in the number of confirmed cases comparing to the other countries, as weel as in the number of active cases. They are also in the first place in the number of deaths while the European countried mostly affected by the pandemic, Spain, Italy, France and United Kingdom, have almost the same number.</p>
 
         </div>
       </section> 
@@ -503,7 +536,8 @@
       <div class="container">
         <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">More Info</h2>
-          <p  style = "text-align: center;">If you want more information about the technical aspects of our project, you can see our explainer notebook <a href="https://render.githubusercontent.com/view/ipynb?commit=7cbb91c32ae6c430cba7c26c2f58c5adc73e0fe6&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f616d616c6961766f672f536f6369616c4461746146696e616c50726f6a6563742f376362623931633332616536633433306362613763323663326635386335616463373365306665362f4578706c61696e65724e6f7465626f6f6b2e6970796e62&nwo=amaliavog%2FSocialDataFinalProject&path=ExplainerNotebook.ipynb&repository_id=255290422&repository_type=Repository#Social-Data-Analysis-and-Visualization-Final-Project" target="_blank">here</a>.</p>
+          <p  style = "text-align: center;">If you want more information about the technical aspects of our project, you can see our explainer notebook <a href="https://nbviewer.jupyter.org/github/amaliavog/SocialDataFinalProject/blob/master/ExplainerNotebook.ipynb">here</a>.</p>
+<!--           https://render.githubusercontent.com/view/ipynb?commit=7cbb91c32ae6c430cba7c26c2f58c5adc73e0fe6&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f616d616c6961766f672f536f6369616c4461746146696e616c50726f6a6563742f376362623931633332616536633433306362613763323663326635386335616463373365306665362f4578706c61696e65724e6f7465626f6f6b2e6970796e62&nwo=amaliavog%2FSocialDataFinalProject&path=ExplainerNotebook.ipynb&repository_id=255290422&repository_type=Repository#Social-Data-Analysis-and-Visualization-Final-Project" target="_blank -->
           <p  style = "text-align: center;">Datasets can be found at the following links: <a href="https://www.kaggle.com/de5d5fe61fcaa6ad7a66/pandemic-2009-h1n1-swine-flu-influenza-a-dataset" target="_blank">H1N1</a> | <a href="https://www.kaggle.com/imdevskp/ebola-outbreak-20142016-complete-dataset" target="_blank">Ebola</a> | <a href="https://www.kaggle.com/imdevskp/sars-outbreak-2003-complete-dataset" target="_blank">SARS</a> | <a href="https://wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai/jhu-edu/timeseries" target="_blank">COVID-19</a>
           </p>
         </div>
@@ -660,6 +694,20 @@
     </script>
     <script>
       $('#top20CoronaReproductionRateTabs a').click(function (e) { 
+        e.preventDefault()
+        target = $(e.target)
+        paneID = $(e.target).attr('href');
+        src = $(paneID).attr('data-src');
+        // if the iframe hasn't already been loaded once
+        if($(paneID+" img").attr("src") == "")
+        {
+            $(paneID+" img").attr("src", src);
+        }
+        $(this).tab('show')
+      })
+    </script>
+   <script>
+      $('#PieChartsTabs a').click(function (e) { 
         e.preventDefault()
         target = $(e.target)
         paneID = $(e.target).attr('href');
